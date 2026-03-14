@@ -40,8 +40,8 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jButton1" alignment="1" min="-2" pref="183" max="-2" attributes="0"/>
-                          <Component id="Recherche" alignment="1" min="-2" pref="183" max="-2" attributes="0"/>
+                          <Component id="Supprimer" alignment="1" min="-2" pref="183" max="-2" attributes="0"/>
+                          <Component id="Imprimer" alignment="1" min="-2" pref="183" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
@@ -75,9 +75,9 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="Modifier" min="-2" pref="27" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="Recherche" min="-2" pref="27" max="-2" attributes="0"/>
+                  <Component id="Imprimer" min="-2" pref="27" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" pref="27" max="-2" attributes="0"/>
+                  <Component id="Supprimer" min="-2" pref="27" max="-2" attributes="0"/>
                   <EmptySpace pref="28" max="32767" attributes="0"/>
                   <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -119,7 +119,7 @@
             <Property name="text" type="java.lang.String" value="Quitter"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="Recherche">
+        <Component class="javax.swing.JButton" name="Imprimer">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SansSerif" size="14" style="1"/>
@@ -127,7 +127,7 @@
             <Property name="text" type="java.lang.String" value="Imprimer un calcul"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RechercheActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ImprimerActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
@@ -139,13 +139,16 @@
             <Property name="text" type="java.lang.String" value="MENU GENERAL"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="Supprimer">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SansSerif" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Supprimer un calcul"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SupprimerActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

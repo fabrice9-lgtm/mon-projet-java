@@ -32,9 +32,9 @@ public class MenuGeneral extends javax.swing.JFrame {
         Effectuer = new javax.swing.JButton();
         Modifier = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        Recherche = new javax.swing.JButton();
+        Imprimer = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        Supprimer = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridBagLayout());
@@ -61,11 +61,11 @@ public class MenuGeneral extends javax.swing.JFrame {
         jButton3.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jButton3.setText("Quitter");
 
-        Recherche.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        Recherche.setText("Imprimer un calcul");
-        Recherche.addActionListener(new java.awt.event.ActionListener() {
+        Imprimer.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        Imprimer.setText("Imprimer un calcul");
+        Imprimer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RechercheActionPerformed(evt);
+                ImprimerActionPerformed(evt);
             }
         });
 
@@ -73,8 +73,13 @@ public class MenuGeneral extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("MENU GENERAL");
 
-        jButton1.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jButton1.setText("Supprimer un calcul");
+        Supprimer.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        Supprimer.setText("Supprimer un calcul");
+        Supprimer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SupprimerActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -83,8 +88,8 @@ public class MenuGeneral extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Recherche, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Supprimer, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Imprimer, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(36, 36, 36)
@@ -109,9 +114,9 @@ public class MenuGeneral extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(Modifier, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(Recherche, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Imprimer, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Supprimer, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addComponent(jButton3)
                 .addContainerGap())
@@ -141,11 +146,17 @@ public class MenuGeneral extends javax.swing.JFrame {
         m.setVisible(true);              // On l'affiche
     }//GEN-LAST:event_ModifierActionPerformed
 
-    private void RechercheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RechercheActionPerformed
+    private void ImprimerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImprimerActionPerformed
         // TODO add your handling code here:
-        Recherche r = new Recherche();
-        r.setVisible(true);
-    }//GEN-LAST:event_RechercheActionPerformed
+        Recherche i = new Recherche();
+        i.setVisible(true);
+    }//GEN-LAST:event_ImprimerActionPerformed
+
+    private void SupprimerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupprimerActionPerformed
+        // TODO add your handling code here:
+        Recherche s = new Recherche();
+        s.setVisible(true);
+    }//GEN-LAST:event_SupprimerActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,9 +195,9 @@ public class MenuGeneral extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Effectuer;
+    private javax.swing.JButton Imprimer;
     private javax.swing.JButton Modifier;
-    private javax.swing.JButton Recherche;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton Supprimer;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
